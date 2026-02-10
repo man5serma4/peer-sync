@@ -36,4 +36,5 @@ jobs:
           NASHJ="$(sha256sum "$FILE" | awk '{print $1}')"
           echo "$(date '+%T') | fingerprint=$NASHJ" >> "$FILE"
           git add "$FILE"
-          git commit -m "log: iv2 recalcul
+          git commit -m "log: iv2 recalculated"
+          git push
